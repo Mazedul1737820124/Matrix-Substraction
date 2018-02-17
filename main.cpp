@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-    int a[10][10],b[10][10],sum = 0;
+    int a[10][10],b[10][10],Sub = 0;
     int n,m;
 
     cout <<"Enter your (n x m) matrix : ";
@@ -24,12 +24,12 @@ int main() {
         }
     }
 
-    cout <<"\nYour matrix sum : \n"<< endl;
+    cout <<"\nYour matrix Substraction : \n"<< endl;
 
     for (int i = 0; i < n ; ++i) {
         for (int j = 0; j < m ; ++j) {
-            //sum[i][j] = a[i][j] + b[i][j];
-            cout<<" "<<a[i][j] <<" + "<<b[i][j]<<" ";
+       
+            cout<<" "<<a[i][j] <<" - "<<b[i][j]<<" ";
         }
         cout <<"\n";
     }
@@ -38,8 +38,8 @@ int main() {
 
     for (int i = 0; i < n ; ++i) {
         for (int j = 0; j < m; ++j) {
-            sum = a[i][j] - b[i][j];
-            cout<<" "<<sum<<"  ";
+            Sub = a[i][j] - b[i][j];
+            cout<<" "<<Sub<<"  ";
         }
         cout<<"\n";
     }
